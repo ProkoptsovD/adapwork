@@ -1,0 +1,8 @@
+<script>
+  function hydrate() {
+    const b = document.body.querySelector('#count');
+    b.textContent = JSON.parse(sessionStorage.getItem('a'))?.count ?? 0;
+  }
+
+  hydrate();
+</script>
