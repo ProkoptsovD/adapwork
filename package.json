@@ -1,11 +1,11 @@
 {
-  "name": "adpawork",
+  "name": "adapwork",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://ProkoptsovD.github.io/adpawork",
+  "homepage": "https://ProkoptsovD.github.io/adapwork",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /adpawork/"
+    "build": "parcel build src/*.html --public-url /adapwork/"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
