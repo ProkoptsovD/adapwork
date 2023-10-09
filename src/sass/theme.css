@@ -46,4 +46,8 @@
   --line-height-h4: 1.3;
   --line-height-body-uppercase: 1.3;
   --line-height-body-regular: 1.2;
+
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1244px;
 }

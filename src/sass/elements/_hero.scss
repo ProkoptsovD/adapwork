@@ -1,0 +1,60 @@
+.hero {
+  --pb: 1rem;
+
+  position: relative;
+  padding-bottom: var(--pb);
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-top: auto;
+  }
+
+  &__subtitle {
+    margin-bottom: 0.62rem;
+  }
+
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__title {
+      font-size: 2.5rem;
+      line-height: 105%;
+      letter-spacing: -0.1rem;
+    }
+  }
+
+  &__bg-video-container {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+
+  &__bg-video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    z-index: -1;
+  }
+
+  .action-controls-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__scroll-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.63rem;
+  }
+}
