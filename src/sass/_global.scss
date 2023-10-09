@@ -1,0 +1,11 @@
+body {
+  font-family: var(--ff-400);
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--fs-400);
+  line-height: var(--line-height-400);
+  letter-spacing: var(--letter-spacing-400);
+
+  color: var(--clr-soft-white, #ffffff);
+  background-color: var(--clr-deep-black, #000000);
+}

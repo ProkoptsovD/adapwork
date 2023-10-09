@@ -1,1 +1,70 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+//  TYPOGRAPHY HELPER CLASSES
+.d-heading-1 {
+  font-size: var(--fs-h1);
+  font-weight: 600;
+  line-height: var(--line-height-h1);
+  letter-spacing: var(--letter-spacing-h1);
+}
+.d-heading-2 {
+  font-size: var(--fs-h2);
+  font-weight: 600;
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+}
+.d-heading-3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-h3);
+}
+.d-heading-4 {
+  font-size: var(--fs-h4);
+  font-weight: 500;
+  line-height: var(--line-height-h4);
+  letter-spacing: var(--letter-spacing-h4);
+}
+
+.d-body-uppercase {
+  font-size: var(--fs-body-uppercase);
+  font-weight: 500;
+  line-height: var(--line-height-body-uppercase);
+  text-transform: uppercase;
+}
+.d-body-regular,
+.d-body-semi-bold {
+  font-size: var(--fs-body-regular);
+  line-height: var(--line-height-body-regular);
+}
+.d-body-semi-bold {
+  font-weight: 600;
+}
+.d-body-small,
+.d-body-small-semi-bold,
+.d-cta {
+  font-size: var(--fs-body-small);
+  line-height: var(--line-height-body-regular);
+}
+.d-body-small-semi-bold {
+  font-weight: 600;
+}
+.d-cta {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+// FORM HELPER CLASSES
+.helper-text,
+.label {
+  font-size: var(--fs-helper-text);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.invalid-text,
+.invalid-bg {
+  color: var(--clr-danger-400);
+}

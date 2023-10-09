@@ -1,0 +1,19 @@
+// NAVIGATION
+.navbar {
+  color: var(--clr-deep-black);
+  background-color: var(--clr-soft-white);
+  border-radius: 4px;
+}
+
+.catalogue-links-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.tab-link {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+}
