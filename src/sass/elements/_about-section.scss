@@ -1,0 +1,40 @@
+.about-section {
+  padding-top: 5rem;
+  padding-bottom: 16.8rem;
+
+  &__animation-block {
+    margin-bottom: 5rem;
+  }
+
+  .certificated-by {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 1.25rem;
+    column-gap: 2.68rem;
+
+    &__icon {
+      width: 13.125rem;
+      height: 5.625rem;
+      flex-shrink: 0;
+    }
+  }
+
+  @media screen and (max-width: 1243px) {
+    .certificated-by {
+      flex-wrap: wrap;
+
+      &__text {
+        font-size: 1.25rem;
+        line-height: 1.1;
+        letter-spacing: -0.05rem;
+      }
+    }
+
+    &__animated-text {
+      font-size: 2.25rem;
+      line-height: 1.05;
+      letter-spacing: -0.09rem;
+    }
+  }
+}

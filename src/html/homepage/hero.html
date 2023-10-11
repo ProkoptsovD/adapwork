@@ -1,11 +1,13 @@
 <section class="hero">
-  <div class="container hero__container">
-    <p class="d-body-uppercase hero__subtitle" data-translate="heroSubtitle">
-      professional chairs and tables FOR PROFESSIONALS
-    </p>
-    <h1 class="d-heading-1 hero__title" data-translate="heroTitle">
-      Максимум регулювань. Iнноваційний дизайн. Винятковий комфорт.
-    </h1>
+  <div class="container hero__container relative">
+    <div class="hero__content-wrapper">
+      <p class="d-body-uppercase hero__subtitle" data-translate="heroSubtitle">
+        professional chairs and tables FOR PROFESSIONALS
+      </p>
+      <h1 class="d-heading-1 hero__title" data-translate="heroTitle">
+        Максимум регулювань. Iнноваційний дизайн. Винятковий комфорт.
+      </h1>
+    </div>
 
     <div class="action-controls-wrapper">
       <a
@@ -15,7 +17,10 @@
         class="d-cta hero__scroll-button"
         aria-label="Скролити до секції 'Про компанію Adapwork'"
       >
-        <span>I</span>
+        <label class="switch" aria-hidden="true" tabindex="-1">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
         Доторкнись до комфорту
       </a>
 
@@ -25,19 +30,34 @@
         aria-label="Чат"
         data-translate="chatButton"
       >
-        A
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M36 10.6875C36 5.7375 31.95 1.6875 27 1.6875H9C4.05 1.6875 0 5.7375 0 10.6875V32.0625C0 32.5125 0.1125 33.075 0.45 33.4125C1.2375 34.425 2.5875 34.65 3.6 33.8625L7.7625 30.7125C8.55 30.15 9.45 29.8125 10.4625 29.8125H27C31.95 29.8125 36 25.7625 36 20.8125V10.6875ZM16.9638 11L13 21H15.4466L16.3948 18.5522H20.5672L21.5345 21H24L20.0552 11H16.9638ZM19.7707 16.4269H17.1914L18.4431 13.2391L19.7707 16.4269Z"
+            fill="#F5F5F5"
+          />
+        </svg>
       </button>
     </div>
   </div>
 
-  <video
-    aria-hidden="true"
-    class="hero__bg-video"
-    src="/assets/videos/hero-video.mp4"
-    loop
-    preload="auto"
-    autoplay
-    muted
-    playsinline
-  ></video>
+  <div class="overlay--colored"></div>
+  <div class="hero__bg-video">
+    <video
+      aria-hidden="true"
+      src="/assets/videos/hero-video.mp4"
+      loop
+      preload="auto"
+      autoplay
+      muted
+      playsinline
+    ></video>
+  </div>
 </section>

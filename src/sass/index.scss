@@ -3,6 +3,21 @@
 @import './sizes.css';
 @import './global';
 @import './common';
+@import './lib/swiper';
 @import './elements/buttons';
+@import './elements/product-card';
+@import './elements/lang-selector';
+@import './elements/toggle-switch';
 @import './elements/header';
+@import './elements/footer';
 @import './elements/hero';
+@import './elements/about-section';
+@import './elements/product-section';
+@import './elements/chairs-section';
+@import './elements/tables-section';
+@import './elements/accessories-sections';
+@import './elements/popular-section';
+@import './elements/follow-social-media';
+
+@import './animation/reveal-text-animation';
+@import './elements/mobile-menu';

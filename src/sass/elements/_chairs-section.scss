@@ -1,0 +1,65 @@
+.chairs-section {
+  height: 56.25rem;
+
+  &__bg-image {
+    background-image: url('/assets/images/chair-section-mobile-bg@1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &__bg-image {
+      background-image: url('/assets/images/chair-section-mobile-bg@2.webp');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__bg-image {
+      background-image: url('/assets/images/chair-section-mobile-bg@1.webp');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &__bg-image {
+        background-image: url('/assets/images/chair-section-mobile-bg@2.webp');
+      }
+    }
+  }
+}
+
+.mySwiper-chairs {
+  width: 100%;
+  height: 32rem;
+}
+
+@media screen and (min-width: 1244px) {
+  .mySwiper-chairs {
+    height: 40rem;
+    margin: 0;
+  }
+
+  .chairs-section {
+    margin: 0;
+  }
+
+  #chairs-section {
+    padding-bottom: 7.5rem;
+  }
+
+  #chairs-section .product-section {
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 8.44rem;
+  }
+
+  #chairs-section .product-section__block {
+    max-width: 100%;
+  }
+  #chairs-section .product-section__block--examples {
+    width: 40%;
+  }
+}

@@ -1,0 +1,66 @@
+.tables-section {
+  height: 56.25rem;
+
+  &__bg-image {
+    background-image: url('/assets/images/table-section-mobile-bg@1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &__bg-image {
+      background-image: url('/assets/images/table-section-mobile-bg@2.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__bg-image {
+      background-image: url('/assets/images/table-section-mobile-bg@1.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &__bg-image {
+        background-image: url('/assets/images/table-section-mobile-bg@2.jpg');
+      }
+    }
+  }
+}
+
+.mySwiper-tables {
+  width: 100%;
+  height: 32rem;
+}
+
+@media screen and (min-width: 1244px) {
+  .mySwiper-tables {
+    height: 40rem;
+    margin: 0;
+  }
+
+  .tables-section {
+    margin: 0;
+  }
+
+  #tables-section {
+    padding-bottom: 7.5rem;
+  }
+
+  #tables-section .product-section {
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 8.44rem;
+  }
+
+  #tables-section .product-section__block {
+    max-width: 100%;
+  }
+
+  #tables-section .product-section__block--examples {
+    width: 40%;
+  }
+}

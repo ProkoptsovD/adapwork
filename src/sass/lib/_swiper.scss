@@ -1,0 +1,32 @@
+.swiper {
+  height: 300px;
+}
+
+.swiper-vertical {
+  padding-right: 0.75rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background: var(--clr-soft-grey);
+}
+
+.swiper-pagination-bullet-active {
+  height: 0.375rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background: var(--clr-soft-white);
+}
+
+.swiper-vertical .swiper-pagination-bullet-active {
+  width: 0.375rem;
+  height: 2rem;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  top: 30%;
+  --swiper-pagination-right: 0.25rem;
+}

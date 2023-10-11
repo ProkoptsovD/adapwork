@@ -2,10 +2,14 @@
   /* COLORS */
   --clr-white: #ffffff;
   --clr-soft-white: #f5f5f5;
+  --clr-soft-white-st: rgba(245, 245, 245, 0.25);
   --clr-danger-400: #ba3c3c;
+  --clr-danger-500: #b2292e;
+  --clr-danger-600: #a71c22;
 
   --clr-black: #000000;
   --clr-deep-black: #0d0d0d;
+  --clr-contrast-black: #121212;
 
   --clr-grey: #6c6c6c;
   --clr-soft-grey: #4d4d4d;
@@ -22,7 +26,8 @@
   /* TYPOGRAPHY */
   --ff-400: 'Inter', sans-serif;
   --fs-400: 1rem;
-  --letter-spacing-400: -0.08rem;
+  --letter-spacing-400: 0rem;
+  --letter-spacing-500: -0.08rem;
   --line-height-400: 1.2;
 
   --fs-h1: 6.25rem;
@@ -36,9 +41,9 @@
 
   --letter-spacing-h1: -0.25rem;
   --letter-spacing-h2: -0.2rem;
-  --letter-spacing-h3: var(--letter-spacing-400);
-  --letter-spacing-h3: var(--letter-spacing-400);
-  --letter-spacing-h4: var(--letter-spacing-400);
+  --letter-spacing-h3: var(--letter-spacing-500);
+  --letter-spacing-h3: var(--letter-spacing-500);
+  --letter-spacing-h4: var(--letter-spacing-500);
 
   --line-height-h1: 1.05;
   --line-height-h2: var(--line-height-h1);

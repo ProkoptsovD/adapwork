@@ -1,0 +1,65 @@
+.reveal-text {
+  min-height: 100vh;
+  background-attachment: scroll !important;
+
+  .split-text {
+    background-attachment: scroll;
+    background-color: transparent;
+
+    &__text-itself {
+      background-attachment: scroll;
+    }
+  }
+}
+
+// used for images scroll
+.scroll-up {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+
+  &__image {
+    width: 11.25rem;
+    height: 15rem;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__image:nth-child(1) {
+    top: 50%;
+  }
+  &__image:nth-child(2) {
+    top: 20%;
+    left: 15%;
+  }
+  &__image:nth-child(3) {
+    top: 35%;
+    right: -25%;
+  }
+  &__image:nth-child(4) {
+    top: 80%;
+    right: -30%;
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  .scroll-up__image {
+    width: 7.5rem;
+    height: 10rem;
+  }
+
+  .scroll-up__image:nth-child(3) {
+    top: 60%;
+    right: -8%;
+  }
+  .scroll-up__image:nth-child(4) {
+    display: none;
+  }
+}

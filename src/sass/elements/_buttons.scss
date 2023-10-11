@@ -1,22 +1,139 @@
 .button {
+  --tr-duration: 0.2s;
+  --tr-func: linear;
+
   display: inline-flex;
   padding: 1rem;
   align-items: center;
   padding: 0.75rem;
   border-radius: 0.125rem;
+
+  transition: background-color var(--tr-duration) var(--tr-func),
+    color var(--tr-duration) var(--tr-func);
 }
 
 .button[data-variant='primary'] {
   color: var(--clr-deep-black);
   background-color: var(--clr-soft-white);
+
+  &:hover,
+  &:focus {
+    background-color: var(--clr-white);
+  }
+}
+
+.button[data-variant='secondary'] {
+  border-radius: 0.1875rem;
+  color: var(--clr-soft-grey);
+  background-color: var(--clr-deep-grey);
+}
+
+.button[data-variant='dark'] {
+  color: var(--clr-soft-white);
+  background-color: var(--clr-deep-black);
+
+  &:hover,
+  &:focus {
+    background-color: var(--clr-contrast-black);
+  }
+}
+
+.button[data-variant='ghost'] {
+  color: var(--clr-soft-white);
+  background-color: transparent;
+  border: 2px solid var(--clr-soft-white);
+
+  &:hover,
+  &:focus {
+    color: var(--clr-deep-black);
+    background-color: var(--clr-white);
+  }
+}
+
+.button:disabled,
+.button.disabled {
+  pointer-events: none;
+  cursor: initial;
+  color: var(--clr-grey);
+  background-color: var(--clr-soft-grey);
 }
 
 .chat-button {
-  width: 2.25rem;
-  height: 2.25rem;
   flex-shrink: 0;
   border-radius: 0.65rem;
+}
 
-  color: var(--clr-deep-black);
-  background-color: var(--clr-soft-white);
+// ARROW BUTTONS
+
+.arrow-button {
+  --size: 3.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 0.1875rem;
+
+  &:not(:disabled) &__icon {
+    fill: var(--clr-soft-white);
+  }
+
+  &:disabled &__icon {
+    fill: var(--clr-soft-grey);
+  }
+
+  &[data-arrow='left'] svg {
+    transform: rotate(-180deg);
+  }
+}
+
+// MOBILE MENU
+.mobile-menu {
+  gap: 0.62rem;
+
+  &__burger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 1rem;
+
+    & span {
+      height: 1px;
+      background-color: var(--clr-deep-black);
+    }
+  }
+}
+
+.mobile-menu[aria-expanded='true'] .mobile-menu__burger {
+  position: relative;
+  height: 12px;
+
+  & span {
+    width: 100%;
+    height: 2px;
+  }
+
+  & span:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  & span:nth-child(2) {
+    display: none;
+  }
+  & span:nth-child(3) {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.cart {
+  gap: 0.62rem;
+  margin-left: 0.125rem;
 }

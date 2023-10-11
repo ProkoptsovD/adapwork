@@ -1,0 +1,36 @@
+.accessories-section {
+  &__bg-image {
+    background-image: url('/assets/images/accessories-section-mobile-bg@1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    &__bg-image {
+      background-image: url('/assets/images/accessories-section-mobile-bg@2.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__bg-image {
+      background-image: url('/assets/images/accessories-section-mobile-bg@1.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      &__bg-image {
+        background-image: url('/assets/images/accessories-section-mobile-bg@2.jpg');
+      }
+    }
+  }
+
+  @media screen and (min-width: 1244px) {
+    & .product-section__block {
+      height: 37.5rem;
+    }
+  }
+}
